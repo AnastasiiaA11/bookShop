@@ -1,1 +1,156 @@
 @import url('обнуление.css');
+
+header {
+	background-color: rgba(27, 55, 100, 1);
+
+
+}
+
+.header__img {
+	width: 119px;
+	height: 35px;
+}
+
+.header__body {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 200px;
+}
+
+.header__icon {
+	display: flex;
+
+}
+
+.header__socialmedia-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 11px;
+}
+
+.header__img-logo {
+	padding-left: 25px;
+}
+
+.header__socialmedia {
+	border: solid rgba(255, 255, 255, 1);
+	background-color: rgba(255, 255, 255, 1);
+	margin-left: 10px;
+	width: 45px;
+	height: 45px;
+}
+
+.header__menu {
+	display: flex;
+}
+
+.header__list {
+	display: flex;
+	justify-content: space-between;
+	width: 450.109px;
+	align-items: center;
+	margin-left: 250px;
+}
+
+.header__button {
+	width: 222px;
+	height: 66px;
+	background-color: rgba(255, 202, 66, 1);
+	color: #1B3764;
+	font-family: Cardo;
+	font-size: 19px;
+}
+
+.header__item-link:hover {
+	color: rgba(255, 202, 66, 1);
+}
+
+.header__item-link {
+	font-family: 'Inter', sans-serif;
+	color: rgba(246, 248, 252, 1);
+}
+
+.welcome {
+	background-color: rgba(27, 55, 100, 1);
+	color: white;
+}
+
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.welcome__body {
+	display: flex;
+	padding-top: 120px;
+}
+
+.welcome__header {}
+
+.welcome__page {
+	font-family: 'Cardo';
+	font-size: 21px;
+	line-height: 36px;
+	letter-spacing: 1.2px;
+	text-transform: capitalize;
+	margin-left: 48.69px;
+	position: relative;
+}
+
+.welcome__header::before {
+	content: " ";
+	background: rgba(255, 202, 66, 1);
+	width: 35px;
+	height: 2px;
+	/* располагаем линию сверху от текста */
+	top: 245px;
+	/* включаем абсолютное позиционирование относительно блока с relative */
+	position: absolute;
+}
+
+.welcome__best-writer {}
+
+.welcome__title {
+	font-family: 'Cardo';
+	font-size: 64px;
+	line-height: 78px;
+	letter-spacing: 1.3px;
+	width: 512px;
+
+}
+
+.welcome__text {
+	color: #B4C7E7;
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+	width: 515px;
+}
+
+.welcome__text__h3 {
+	color: #B4C7E7;
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+	width: 432px;
+}
+
+.welcome__block-button {}
+
+.welcome__button-order {}
+
+.welcome__button-demo {}
+
+.welcome__parameter-list {}
+
+.welcome__item {}
+
+.welcome__emphasis {}
+
+.welcome__img {}
+
+.welcome__img-with {
+	width: 592px;
+	height: 800px;
+}
