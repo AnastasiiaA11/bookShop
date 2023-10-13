@@ -2,8 +2,6 @@
 
 header {
 	background-color: rgba(27, 55, 100, 1);
-
-
 }
 
 .header__img {
@@ -12,8 +10,8 @@ header {
 }
 
 .header__body {
+	background-color: rgba(27, 55, 100, 1);
 	display: flex;
-	justify-content: space-between;
 	padding: 20px 200px;
 }
 
@@ -54,12 +52,13 @@ header {
 }
 
 .header__button {
-	width: 222px;
+	min-width: 222px;
 	height: 66px;
 	background-color: rgba(255, 202, 66, 1);
 	color: #1B3764;
 	font-family: Cardo;
 	font-size: 19px;
+	margin-left: 51px;
 }
 
 .header__item-link:hover {
@@ -76,6 +75,7 @@ header {
 	color: white;
 }
 
+
 .container {
 	max-width: 1300px;
 	margin: 0 auto;
@@ -84,9 +84,9 @@ header {
 .welcome__body {
 	display: flex;
 	padding-top: 120px;
+	margin-left: 23.31px;
+	padding-bottom: 100px;
 }
-
-.welcome__header {}
 
 .welcome__page {
 	font-family: 'Cardo';
@@ -108,8 +108,6 @@ header {
 	/* включаем абсолютное позиционирование относительно блока с relative */
 	position: absolute;
 }
-
-.welcome__best-writer {}
 
 .welcome__title {
 	font-family: 'Cardo';
@@ -136,21 +134,193 @@ header {
 	width: 432px;
 }
 
-.welcome__block-button {}
+.welcome__block-button {
+	margin: 22px 51px 10px 0px;
+}
 
-.welcome__button-order {}
+.welcome__button-order {
+	color: #1B3764;
+	font-family: 'Cardo';
+	font-size: 19px;
+	line-height: 28.5px;
+	letter-spacing: 0.57px;
+	text-transform: capitalize;
+	border: 2px solid #FFCA42;
+	background: #FFCA42;
+	width: 222px;
+	height: 66px;
 
-.welcome__button-demo {}
+}
 
-.welcome__parameter-list {}
 
-.welcome__item {}
+.welcome__button-demo {
+	color: #FFF;
+	font-family: 'Cardo';
+	font-size: 19px;
+	line-height: 30.4px;
+	letter-spacing: 0.38px;
+	text-transform: capitalize;
+	background-color: rgba(27, 55, 100, 1);
+	border-bottom: 1px white solid;
+	margin: 28px 164px 28px 51px;
+}
 
-.welcome__emphasis {}
+.welcome__parameter-list {
+	display: flex;
+	margin-top: 40px;
+}
 
-.welcome__img {}
+.welcome__item {
+	width: 169px;
+	height: 65px;
+	color: #FFF;
+	font-family: 'Cardo';
+	font-size: 24px;
+	line-height: 28.8px;
+	letter-spacing: 0.48px;
+	margin-bottom: 12px;
+}
+
+.welcome__item::before {
+	content: "";
+	background: #FFCA42;
+	width: 16px;
+	height: 16px;
+	float: left;
+	border-radius: 50%;
+	background: #FFCA42;
+	margin-top: 8px;
+	margin-right: 8px;
+}
+
+.welcome__emphasis {
+	display: block;
+	color: #B4C7E7;
+	font-family: 'Inter', sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 27px;
+	margin-left: 27px;
+	margin-top: 12px;
+	width: 156px;
+}
+
+.welcome__img {
+	margin-left: 75.71px;
+}
 
 .welcome__img-with {
-	width: 592px;
+	min-width: 592px;
 	height: 800px;
+}
+
+.authors__body {
+	margin-top: 110px;
+	margin-bottom: 90px;
+}
+
+.authors__body-title {
+	color: #1B3764;
+	text-align: center;
+	font-family: Cardo;
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 50.4px;
+
+}
+
+.authors__body-title::after {
+	content: "";
+	display: block;
+	border: 3px solid rgba(255, 202, 66, 1);
+	width: 50px;
+	margin-top: 23px;
+	margin-left: 620px;
+
+}
+
+.authors__body-body {
+	display: flex;
+	margin-top: 36px;
+}
+
+.authors__column {
+	display: flex;
+	margin-top: 60px;
+	margin-right: 20px;
+}
+
+.authors__column-img {
+	width: 285px;
+	height: 382px;
+}
+
+.authors__body-column {
+	margin-top: 22px;
+	margin-left: 30px;
+}
+
+.authors__title {
+	color: #1B3764;
+	font-family: Cardo;
+	font-size: 32px;
+	line-height: 38.4px;
+	/* 120% */
+	letter-spacing: 0.32px;
+	margin: 17px 0px 7px 0px;
+}
+
+.authors__price {
+	color: #FFCA42;
+	font-family: Inter;
+	font-size: 21px;
+	line-height: 33px;
+	/* 157.143% */
+}
+
+.authors__text {
+	color: #969AA0;
+	font-family: Inter;
+	font-size: 19px;
+	line-height: 28.5px;
+	/* 150% */
+	width: 287px;
+	margin-top: 17px;
+}
+
+.authors__printed {
+	color: #1B3764;
+	font-family: Cardo;
+	font-size: 24px;
+	line-height: 28.8px;
+	padding: 7px 143px 18px 0px;
+	margin: 7px 0px 0px 0px;
+	/* 120% */
+}
+
+.authors__printed::before {
+	content: "";
+	background: #FFCA42;
+	width: 16px;
+	height: 16px;
+	float: left;
+	border-radius: 50%;
+	background: #FFCA42;
+	margin-top: 8px;
+	margin-right: 8px;
+}
+
+.authors__button {
+	color: #1B3764;
+	font-family: Cardo;
+	font-size: 19px;
+	line-height: 28.5px;
+	/* 150% */
+	letter-spacing: 0.38px;
+	background-color: white;
+	border: 2px solid #FFCA42;
+	width: 206px;
+	height: 66px;
+	margin-top: 10px;
 }
